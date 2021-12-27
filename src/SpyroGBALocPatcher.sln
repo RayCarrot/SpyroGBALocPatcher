@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpyroGBALocPatcher", "SpyroGBALocPatcher\SpyroGBALocPatcher.csproj", "{21F471CD-6606-4EB9-8049-0233571A2C4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binary", "Binary", "{02549AED-A72D-4649-94FF-2C9FB24E12D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySerializer", "..\submodules\BinarySerializer\src\BinarySerializer.csproj", "{175D8231-C603-4582-B4DF-0A9CB1B4D0D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21F471CD-6606-4EB9-8049-0233571A2C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F471CD-6606-4EB9-8049-0233571A2C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F471CD-6606-4EB9-8049-0233571A2C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F471CD-6606-4EB9-8049-0233571A2C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175D8231-C603-4582-B4DF-0A9CB1B4D0D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175D8231-C603-4582-B4DF-0A9CB1B4D0D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175D8231-C603-4582-B4DF-0A9CB1B4D0D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175D8231-C603-4582-B4DF-0A9CB1B4D0D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{175D8231-C603-4582-B4DF-0A9CB1B4D0D6} = {02549AED-A72D-4649-94FF-2C9FB24E12D3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDC54B30-35D9-4135-8AA1-AD7D916393F4}
+	EndGlobalSection
+EndGlobal
