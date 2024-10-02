@@ -22,6 +22,30 @@ public class Config
         '¡', '©', '¿', 'Á', 'Ä', 'Ç', 'È', 'É', 'Ì', 'Í', 'Ñ', 'Ó', 'Ö', 'Ú', 'Ü',
         'ß', 'à', 'á', 'â', 'ä', 'ç', 'è', 'é', 'ê', 'ì', 'í', 'î', 'ï', 'ñ', 'ò', 'ó', 'ô', 'ö', 'ù', 'ú', 'û', 'ü'
     };
+    public static char[] DefaultFont_Spyro2EU => new char[]
+    {
+        ' ', '!', '"', '%', '&', '\'', '(', ')', ',', '-', '.', '/',
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+        ':', ';', '?',
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
+        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+        'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+        '¡', '©', '¿', 'Á', 'Ä', 'Ç', 'È', 'É', 'Ì', 'Í', 'Ñ', 'Ó', 'Ö', 'Ú', 'Ü',
+        'ß', 'à', 'á', 'â', 'ä', 'ç', 'è', 'é', 'ê', 'ì', 'í', 'î', 'ï', 'ñ', 'ò', 'ó', 'ô', 'ö', 'ù', 'ú', 'û', 'ü'
+    };
+    public static char[] DefaultFont_Spyro2US => new char[]
+    {
+        ' ', '!', '"', '%', '&', '\'', '(', ')', ',', '-', '.', '/',
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+        ':', ';', '?',
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
+        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+        'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+        '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+        '', '', '', '', '', '', 'é'
+    };
 
     public static IEnumerable<(string Name, Config Config)> GetDefaults()
     {
@@ -77,6 +101,60 @@ public class Config
             LocAddress = 0x08270434,
             LocLength = 26652,
             Font = DefaultFont_Spyro1,
+        });
+
+        yield return ("Flame_EU_English", new Config
+        {
+            ROMFilePath = "Season of Flame (EU).gba",
+            TextFilePath = "Season of Flame (EU - English).json",
+            LocAddress = 0x08180130,
+            LocLength = 47288,
+            Font = DefaultFont_Spyro2EU,
+        });
+
+        yield return ("Flame_EU_French", new Config
+        {
+            ROMFilePath = "Season of Flame (EU).gba",
+            TextFilePath = "Season of Flame (EU - French).json",
+            LocAddress = 0x0818b9e8,
+            LocLength = 50444,
+            Font = DefaultFont_Spyro2EU,
+        });
+
+        yield return ("Flame_EU_Spanish", new Config
+        {
+            ROMFilePath = "Season of Flame (EU).gba",
+            TextFilePath = "Season of Flame (EU - Spanish).json",
+            LocAddress = 0x08197ef4,
+            LocLength = 50200,
+            Font = DefaultFont_Spyro2EU,
+        });
+
+        yield return ("Flame_EU_German", new Config
+        {
+            ROMFilePath = "Season of Flame (EU).gba",
+            TextFilePath = "Season of Flame (EU - German).json",
+            LocAddress = 0x081a430c,
+            LocLength = 51996,
+            Font = DefaultFont_Spyro2EU,
+        });
+            
+        yield return ("Flame_EU_Italian", new Config
+        {
+            ROMFilePath = "Season of Flame (EU).gba",
+            TextFilePath = "Season of Flame (EU - Italian).json",
+            LocAddress = 0x081b0e28,
+            LocLength = 50936,
+            Font = DefaultFont_Spyro2EU,
+        });
+
+        yield return ("Flame_US_English", new Config
+        {
+            ROMFilePath = "Season of Flame (US).gba",
+            TextFilePath = "Season of Flame (US - English).json",
+            LocAddress = 0x0817fde4,
+            LocLength = 48140,
+            Font = DefaultFont_Spyro2US,
         });
     }
 }
