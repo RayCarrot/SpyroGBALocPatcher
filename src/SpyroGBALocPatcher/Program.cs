@@ -45,7 +45,7 @@ public class Program
         });
 
         SpyroEncoding encoding = new(config.Font);
-        Pointer locPointer = new Pointer(config.LocAddress, context.GetFile(romFile));
+        Pointer locPointer = new(config.LocAddress, context.GetFile(romFile));
 
         // Import
         if (import)
