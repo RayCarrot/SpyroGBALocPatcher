@@ -29,6 +29,6 @@ In order for text to be imported or exported a valid config file needs to be use
 * **Font**: The font character table, defining which character each font index represents.
 
 # Games
-* **Spyro: Season of Ice**: All versions are supported. There is currently no default config for the JP version.
-* **Spyro: Season of Flame**: All versions are supported. There is currently no default config for any of the versions.
-* **Spyro: Attack of the Rhynocs**: Currently not supported due to text data being compressed (see [Ray1Map](https://github.com/Adsolution/Ray1Map/blob/master/Assets/Scripts/Games/GBAIsometric/Serializable/Spyro/Localization/GBAIsometric_Spyro_LocBlock.cs#L45)).
+* **Spyro: Season of Ice**: All versions are supported, however there is currently no default config for the JP version.
+* **Spyro: Season of Flame**: All versions are supported.
+* **Spyro: Attack of the Rhynocs**: Currently not supported due to text data being compressed (see [Ray1Map](https://github.com/BinarySerializer/Ray1Map/blob/master/Assets/Scripts/Games/GBAIsometric/Serializable/IceDragon/Localization/GBAIsometric_IceDragon_LocBlock.cs#L44)).
